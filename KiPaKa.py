@@ -42,7 +42,8 @@ for p in range(n):
     if game=="1" and p==0:
 
         nimi1=input("Mis sinu nimi on? ").title()
-
+        while nimi1.isalpha()==False or len(nimi1)<2:
+            nimi1=input("Palun kirjuta õige nimi! ").title()
 
     elif game=="2" and p==0:
 
